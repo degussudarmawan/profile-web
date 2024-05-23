@@ -1,0 +1,234 @@
+body{
+    background-image: linear-gradient(blue, rgb(146, 204, 255), white);
+    overflow-x: hidden;
+    margin: 0;                       
+}
+
+.topnavbar{
+    background-color: rgb(19, 23, 157);
+    color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.topnavbar b{
+    background-color: rgb(19, 23, 157);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.topnavbar a{
+    float: left;
+    display: inline;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+
+    text-align: center;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Conthrax", sans-serif;
+    text-shadow: 2px 2px black;
+    font-style: bold;
+}
+
+.nav:hover{
+    background-color: rgb(0, 140, 255);
+}
+
+.grid-container{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+.grid-container .container{
+    width: 100%;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    display: block;
+
+    color: antiquewhite;
+    background-color: rgb(0, 140, 255);
+
+    border-radius: 15px;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Conthrax", sans-serif;
+    font-style: bold;
+}
+
+#home h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: "Conthrax", sans-serif;
+    font-style: bold;
+}
+
+#cd1{
+    position: relative;
+    z-index: -2;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    animation: mymove 5s infinite;
+}
+
+.container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+}
+
+#home2{
+    background-image: linear-gradient(yellow, white);
+    color:black;
+    box-shadow: 10px 10px;
+}
+
+#aboutme{
+    background-image: linear-gradient(rgb(1, 255, 1) 30%, white);
+    color:black;
+    box-shadow: 10px 10px;
+}
+
+.container p{
+    margin: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 125%;
+} 
+
+.container li{
+    margin: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 125%;
+} 
+
+.cd-list{
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+.cd-list img{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.cd-list img:hover{
+    animation: cdmove 5s infinite;
+    z-index: -2px;
+}
+
+.fa{
+    color: black;
+}
+
+.container-contact{
+    background-image: linear-gradient(rgb(174, 0, 255) 0%, rgb(255, 255, 255) 100%);
+    box-shadow: 10px 10px rgb(0, 0, 94);
+    width: 70%;
+    height: 175px;
+    margin: auto;
+    display: block;
+
+    color: black;
+
+    border-radius: 30px;
+    padding: 15px;
+    position: relative;
+}
+
+.container-contact .linkspan{
+    font-size: 72px;
+}
+
+.container-contact .linkspan1{
+    position: absolute;
+    left: 10%;
+}
+
+.container-contact .linkspan2{
+    position: absolute;
+    left: 40%;
+}
+
+.container-contact .linkspan3{
+    position: absolute;
+    left: 70%;
+}
+
+#bunnies{
+    white-space: nowrap;
+    overflow: scroll;
+    background-image: linear-gradient(yellow, white);
+    box-shadow: 10px 10px rgb(0, 0, 94);
+    width: 80%;
+    color: black;
+    font-family: sans-serif;
+}
+
+#bunnies p{
+    text-align: center;
+}
+
+#bunnies img{
+    width: 400px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.fa:hover{
+    color: rgb(0, 109, 252);
+}
+
+.footbar{
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgb(60, 50, 245));
+    width: 100%;
+    height: 100px;
+    margin-top: 4px;
+}
+
+.footbar p{
+    text-align: left;
+    color :antiquewhite;
+    position: absolute;
+    padding-top: 15px;
+    font-size: 10px;
+    line-height: 0.5em;
+    bottom: 0px;
+} 
+
+@keyframes mymove{
+    50% {transform: rotateY(360deg);}
+}
+
+@keyframes cdmove{
+    30% {transform: rotate(180deg);}
+}
+
